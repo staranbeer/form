@@ -61,6 +61,12 @@
     background-color: #ffffff;
     border: 1px solid rgba(192,192,192, 0.5);
     border-radius: 5px;
+    
+    transition: box-shadow 0.3s;
+}
+
+.services .service:hover{
+    box-shadow: 2px 2px 2px silver
 }
 
 .services .service .service-img{
@@ -126,6 +132,9 @@
     margin: 10px 10px;
 
     font-size: 16px;
+    
+    border: 1px solid silver;
+    border-radius: 5px;
 }
 
 .right-container form .row input::placeholder{
@@ -139,9 +148,10 @@
 
     color: rgb(153, 153, 153);
 
-    border: 1px solid rgba(192, 192, 192, 0.555);
+    border: 1px solid silver;
     background-color: #ffffff;
-
+    border-radius: 5px;
+    
     font-size: 16px;
     font-weight: 500;
 }
@@ -164,13 +174,20 @@
 }
 
 .click-login button{
-    padding: 12px 32px;
+    padding: 12px 38px;
     
     color: rgba(0, 0, 128, 0.863);
 
-    border: 1px solid rgba(192, 192, 192, 0.794);
-
+    border: none;
+    border-radius: 5px;
+    
     background-color: #f77315d0;
     font-size: 16px;
     font-weight: 600;
+    
+    transition: box-shadow .3s;
+}
+
+.click-login:hover{
+    box-shadow: 3px 5px 7px silver;   
 }
