@@ -188,6 +188,6 @@
     transition: box-shadow .3s;
 }
 
-.click-login:hover{
+.click-login button:hover{
     box-shadow: 3px 5px 7px silver;   
 }
