@@ -269,6 +269,12 @@
     .query-form-container{
         max-width: 400px;
     }
+    .query-form-container .right-container{
+        padding: 30px 10px;
+    }
+    .query-form-container .left-container{
+        padding: 10px;
+    }
 
     .right-container form .row{
         flex-direction: column;
@@ -276,6 +282,9 @@
         margin-bottom: 0;
     }
 
+    .college-card img{
+        width: 150px;
+    }
     .left-container .services .service{
         margin: 10px;
         padding: 20px;
