@@ -18,20 +18,22 @@
 #formButton{
     position: fixed;
     top: 280px;
-    color: rgb(0 33 71);
+    color: #f87e25;
+    border: none;
     padding: 13px;
-    background-color: rgb(250 124 13);
+    background-color: #002147;
     border-radius: 5px;
     transition: opacity 0.4s;
     z-index: 1000000000;
 }
+
 #formButton:hover{
     cursor: pointer;
 }
 
 #cross{
     cursor: pointer;
-    width: 30px;
+    width: 25px;
 
 }
 
@@ -44,7 +46,7 @@
     padding: 30px;
     
     display: grid;
-    grid-template-rows:1fr 6fr 200px;
+    grid-template-rows:30px 6fr 40px 140px;
     grid-template-columns: 1fr;
     
     background-color: rgb(248, 248, 248);    
@@ -61,25 +63,24 @@
 }
 
 .left-container .services-heading{
-    padding: 20px 20px;
+    padding: 10px 20px;
     
     align-self: center;
     justify-self: stretch;
     
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
-    text-decoration: underline;
     
     color: rgba(0, 0, 128, 0.609);
     
 }
 
 .left-container .services .service{
-    height: 90px;
+    max-height: 50px;
     width: 110px;
  
     margin: 10px;
-    padding: 30px;
+    padding: 22px 25px;
  
     display: flex;
     flex-direction: column;
@@ -98,15 +99,27 @@
 }
 
 .services .service .service-img{
-    height: 50px;
-    margin: 7px;
+    height: 35px;
+    margin: 5px;
 }
 
 .service-desc{
-    margin: 7px;
+    margin: 5px;
     color: navy;
 }
+.left-container .reviews-heading{
+    padding: 20px 20px;
+    margin: 5px;
 
+    align-self: center;
+    justify-self: stretch;
+    
+    font-size: 16px;
+    font-weight: 600;
+    
+    color: rgba(0, 0, 128, 0.609);
+    
+}
 .left-container .reviews{
     margin: 10px;
 
@@ -128,12 +141,16 @@
 }
 
 .right-container .college-card{
-    padding: 30px 0 40px 20px;
+    padding: 15px 0 20px 20px;
     
     justify-self: center;
     align-self: center;
     
     border-bottom: 1px solid silver;
+}
+
+.college-card img{
+    width: 300px;
 }
 
 .right-container form{
@@ -192,10 +209,9 @@
 }
 
 .click-login a{
-    color: rgba(0, 0, 128, 0.609);
+    color: #f87e25;
     
     text-decoration: none;
-    font-weight: 600;
 }
 
 .click-login a:hover{
@@ -205,12 +221,12 @@
 .click-login button{
     padding: 0 32px;
     
-    color: rgba(0, 0, 128, 0.863);
+    background-color: rgba(0, 0, 128, 0.863);
 
     border: none;
     border-radius: 5px;
     
-    background-color: #f77315d0;
+    color: #f77315d0;
     font-size: 14px;
     font-weight: 600;
     
