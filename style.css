@@ -1,16 +1,16 @@
 .query-form-container{
     font-family: 'Poppins', sans-serif;
-    max-width: 1300px;
+    max-width: 1100px;
     margin: 50px auto;
 
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
     
     color: rgb(126, 125, 125);
 }
 
-/* the left side of the form */
+/************************************ the left side of the form ******************************/
 
 .query-form-container .left-container{
     padding: 30px;
@@ -20,7 +20,7 @@
     grid-template-columns: 1fr;
     
     background-color: rgb(248, 248, 248);    
-    border-left: 1px solid rgba(192, 192, 192, 0.555);
+    border-right: 1px solid rgba(192, 192, 192, 0.555);
     border-top: 1px solid rgba(192, 192, 192, 0.555);
     border-bottom: 1px solid rgba(192, 192, 192, 0.555);
 }
@@ -128,10 +128,9 @@
 .right-container form .row input{
     min-width: 40%;
 
-    padding: 18px 14px;
+    padding: 12px 14px;
     margin: 10px 10px;
 
-    font-size: 16px;
     
     border: 1px solid silver;
     border-radius: 5px;
@@ -143,7 +142,7 @@
 }
 
 .right-container .courses{
-    padding: 20px 18px;
+    padding: 12px 18px;
     margin: 10px 30px;
 
     color: rgb(153, 153, 153);
@@ -152,14 +151,14 @@
     background-color: #ffffff;
     border-radius: 5px;
     
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
 }
 
 .right-container .click-login{
     display: flex;
     justify-content: space-between;
-    margin: 0 60px;
+    margin: 0 50px;
 }
 
 .click-login a{
@@ -174,7 +173,7 @@
 }
 
 .click-login button{
-    padding: 12px 38px;
+    padding: 0 32px;
     
     color: rgba(0, 0, 128, 0.863);
 
@@ -182,7 +181,7 @@
     border-radius: 5px;
     
     background-color: #f77315d0;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     
     transition: box-shadow .3s;
@@ -191,3 +190,121 @@
 .click-login button:hover{
     box-shadow: 3px 5px 7px silver;   
 }
+
+@media only screen and (max-width: 1215px) {
+    .query-form-container {
+      font-size: 12px;
+      max-width: 900px;
+    }
+    .click-login button{
+        font-size: 12px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .right-container form .row input{
+        font-size: 12px;
+    }
+    .right-container .courses{
+        font-size: 12px;
+    }
+    .right-container .click-login{
+        margin: 0 40px;
+    }
+  }
+
+
+  @media only screen and (max-width: 1100px) {
+    .query-form-container {
+        grid-template-columns: 1fr;
+        max-width: 700px;
+      }
+      .left-container .services .service{
+        margin: 10px;
+        padding: 30px;
+        min-width: 180px;
+    }
+    .college-card img{
+        width: 300px;
+    }
+    .right-container form .row{
+        width: 90%;
+    }
+    .right-container .click-login{
+        justify-content: space-around;
+    }
+  }
+
+
+
+  @media only screen and (max-width: 660px){
+    .query-form-container {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        font-size: 10px;
+    }
+      .left-container .services .service{
+        margin: 10px;
+        padding: 30px;
+        min-width: 120px;
+    }
+    .college-card img{
+        width: 250px;
+    }
+    .right-container .click-login{
+        flex-direction: column;
+        align-items: center;   
+    }
+
+    .right-container .click-login button{
+        padding: 12px 22px;
+        border-radius: 3px;
+    }
+
+    .right-container form{
+        padding: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 540px){
+    .query-form-container{
+        max-width: 400px;
+    }
+
+    .right-container form .row{
+        flex-direction: column;
+        width: 80%;
+        margin-bottom: 0;
+    }
+
+    .left-container .services .service{
+        margin: 10px;
+        padding: 20px;
+        min-width: 80px;
+    }
+    .left-container .services .service img{
+        
+        max-width: 40px;
+    }
+  }
+
+  @media only screen and (max-width: 440px){
+    .query-form-container{
+        max-width: 300px;
+    }
+
+    .right-container form .row{
+        flex-direction: column;
+        width: 80%;
+        margin-bottom: 0;
+    }
+
+    .left-container .services .service{
+        margin: 0px;
+        padding: 5px;
+        min-width: 50px;
+    }
+
+    .left-container .services .service img{    
+        max-width: 30px;
+    }
+  }
